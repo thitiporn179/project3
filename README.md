@@ -1,22 +1,22 @@
 # project3 Building a Datawarehouse with BigQuery
-Getting Started
+# Getting Started
 python -m venv ENV
 source ENV/bin/activate
 pip install -r requirements.txt
 
-Run ETL Script
+# Run ETL Script
 python etl.py
 
-Set def main(dataset_id, table_id, file_path)
+# Set def main(dataset_id, table_id, file_path)
 main(dataset_id="github", table_id="events", file_path="github_events.csv")
 
-Set Project ID
+# Set Project ID
 project_ID = ""XXX_PROJECT""
 
-Set Keyfile Path
+# Set Keyfile Path
 keyfile = ""XXX_KEYFILE_PATH""
 
-Keyfile Path in GCP
+# Keyfile Path in GCP
 IAM & Admin --> Service Accounts
 Create Service Accounts : 
     Service accounts details: Service account name
@@ -24,13 +24,13 @@ Create Service Accounts :
     Grant user access to service account: Done
     Create private key type: JSON
 
-Load data to BigQuery
+# Load data to BigQuery
 python etl.py
 
-Add Actor in ETL and show in BigQuery
+# Add Actor in ETL and show in BigQuery
 Delete events
 python etl.py
 Create new events
 
-Query Data
+# Query Data
 SELECT type from 
